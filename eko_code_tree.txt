@@ -1,0 +1,170 @@
+.
+├── CONTRIBUTING.md
+├── eko_code_tree.txt
+├── example
+│   ├── extension
+│   │   ├── package.json
+│   │   ├── public
+│   │   │   ├── icon.ico
+│   │   │   ├── manifest.json
+│   │   │   ├── options.html
+│   │   │   └── sidebar.html
+│   │   ├── src
+│   │   │   ├── background
+│   │   │   │   ├── index.ts
+│   │   │   │   └── main.ts
+│   │   │   ├── content
+│   │   │   │   └── index.ts
+│   │   │   ├── options
+│   │   │   │   └── index.tsx
+│   │   │   └── sidebar
+│   │   │       └── index.tsx
+│   │   ├── tsconfig.json
+│   │   └── webpack.js
+│   ├── nodejs
+│   │   ├── package.json
+│   │   ├── rollup.config.js
+│   │   ├── src
+│   │   │   ├── chat.ts
+│   │   │   └── index.ts
+│   │   └── tsconfig.json
+│   └── web
+│       ├── package.json
+│       ├── public
+│       │   ├── favicon.ico
+│       │   ├── index.html
+│       │   └── manifest.json
+│       └── src
+│           ├── App.tsx
+│           ├── index.css
+│           ├── index.tsx
+│           └── main.ts
+├── LICENSE
+├── package.json
+├── packages
+│   ├── eko-core
+│   │   ├── jest.config.js
+│   │   ├── package.json
+│   │   ├── publish.sh
+│   │   ├── rollup.config.js
+│   │   ├── src
+│   │   │   ├── agent
+│   │   │   │   ├── a2a.ts
+│   │   │   │   ├── base.ts
+│   │   │   │   ├── browser
+│   │   │   │   ├── chat.ts
+│   │   │   │   ├── computer.ts
+│   │   │   │   ├── file.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── shell.ts
+│   │   │   │   └── timer.ts
+│   │   │   ├── common
+│   │   │   │   ├── log.ts
+│   │   │   │   ├── utils.ts
+│   │   │   │   └── xml.ts
+│   │   │   ├── config
+│   │   │   │   └── index.ts
+│   │   │   ├── core
+│   │   │   │   ├── chain.ts
+│   │   │   │   ├── context.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   └── plan.ts
+│   │   │   ├── index.ts
+│   │   │   ├── llm
+│   │   │   │   └── index.ts
+│   │   │   ├── mcp
+│   │   │   │   └── index.ts
+│   │   │   ├── memory
+│   │   │   │   ├── index.ts
+│   │   │   │   └── snapshot.ts
+│   │   │   ├── prompt
+│   │   │   │   ├── agent.ts
+│   │   │   │   └── plan.ts
+│   │   │   ├── tools
+│   │   │   │   ├── foreach_task.ts
+│   │   │   │   ├── human_interact.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── task_node_status.ts
+│   │   │   │   ├── variable_storage.ts
+│   │   │   │   ├── watch_trigger.ts
+│   │   │   │   └── wrapper.ts
+│   │   │   └── types
+│   │   │       ├── core.types.ts
+│   │   │       ├── index.ts
+│   │   │       ├── llm.types.ts
+│   │   │       ├── mcp.types.ts
+│   │   │       └── tools.types.ts
+│   │   ├── test
+│   │   │   ├── core
+│   │   │   │   ├── agents.ts
+│   │   │   │   ├── eko.test.ts
+│   │   │   │   └── mcp.test.ts
+│   │   │   ├── demo.test.ts
+│   │   │   └── llm
+│   │   │       ├── claude.test.ts
+│   │   │       ├── llm.test.ts
+│   │   │       ├── mcp.test.ts
+│   │   │       ├── openai.test.ts
+│   │   │       ├── stream.test.ts
+│   │   │       ├── utils.test.ts
+│   │   │       └── xml.test.ts
+│   │   ├── tsconfig.json
+│   │   └── typedoc.json
+│   ├── eko-extension
+│   │   ├── package.json
+│   │   ├── publish.sh
+│   │   ├── rollup.config.js
+│   │   ├── src
+│   │   │   ├── browser.ts
+│   │   │   └── index.ts
+│   │   └── tsconfig.json
+│   ├── eko-nodejs
+│   │   ├── package.json
+│   │   ├── publish.sh
+│   │   ├── rollup.config.js
+│   │   ├── src
+│   │   │   ├── browser.ts
+│   │   │   ├── file.ts
+│   │   │   └── index.ts
+│   │   └── tsconfig.json
+│   └── eko-web
+│       ├── package.json
+│       ├── publish.sh
+│       ├── rollup.config.js
+│       ├── src
+│       │   ├── browser.ts
+│       │   └── index.ts
+│       └── tsconfig.json
+├── pnpm-workspace.yaml
+├── README.md
+├── src
+│   ├── common
+│   │   ├── summarize-workflow.ts
+│   │   └── tools
+│   │       └── human.ts
+│   ├── core
+│   │   └── eko.ts
+│   ├── extension
+│   │   ├── tools
+│   │   │   ├── browser.ts
+│   │   │   ├── browser_use.ts
+│   │   │   ├── export_file.ts
+│   │   │   ├── extract_content.ts
+│   │   │   ├── open_url.ts
+│   │   │   ├── tab_management.ts
+│   │   │   ├── tool_returns_screenshot.ts
+│   │   │   └── web_search.ts
+│   │   └── utils.ts
+│   ├── models
+│   │   └── action.ts
+│   ├── services
+│   │   └── llm
+│   │       ├── claude-provider.ts
+│   │       └── openai-provider.ts
+│   └── types
+│       ├── action.types.ts
+│       ├── eko.types.ts
+│       └── workflow.types.ts
+└── tree.sh
+
+46 directories, 121 files
